@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif; /* Menggunakan font standar */
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  padding: 0 50px; /* Memberi jarak di kiri dan kanan layar */
+}
+
+/* --- 2. BAGIAN NAVBAR (ATAS) --- */
+nav {
+  height: 80px;
+  display: flex; /* KUNCI: Membuat isi navbar sejajar ke samping */
+  justify-content: space-between; /* Logo di kiri mentok, Menu di kanan mentok */
+  align-items: center; /* Memastikan logo dan menu rata tengah secara vertikal */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu a {
+  text-decoration: none; /* Hilangkan garis bawah link */
+  color: #333;
+  margin-left: 30px; /* Jarak antar menu */
+  font-weight: 500;
+}
+
+/* --- 3. BAGIAN HERO (TENGAH) --- */
+.hero {
+  display: flex; /* KUNCI: Membuat Tulisan (Kiri) dan Gambar (Kanan) sejajar */
+  align-items: center; /* Rata tengah secara vertikal */
+  min-height: 80vh; /* Tinggi minimal 80% layar */
+  padding-bottom: 50px;
+}
+
+/* Mengatur lebar area Kiri dan Kanan masing-masing 50% */
+.left-content {
+  flex: 1; /* Mengambil 1 bagian ruang */
+  padding-right: 50px; /* Jarak agar tidak nempel ke gambar */
+}
+
+.right-content {
+  flex: 1; /* Mengambil 1 bagian ruang */
+  display: flex;
+  justify-content: center;
+}
+
+/* --- 4. STYLING TEKS DAN TOMBOL --- */
+h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+/* Membuat efek warna ungu pada huruf "Co" */
+h1 span {
+  color: #c599ff;
+}
+
+p {
+  color: #666;
+  line-height: 1.6; /* Jarak antar baris kalimat */
+  margin-bottom: 30px;
+  max-width: 400px; /* Supaya teks tidak terlalu lebar */
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 30px; /* Membuat tombol lonjong */
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.social-icons {
+  margin-top: 40px;
+}
+
+.social-icons span {
+  font-size: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* --- 5. GAMBAR ILUSTRASI --- */
+/* Karena kita tidak punya gambar asli, kita buat kotak simulasi */
+.illustration-placeholder {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+/* Jika kamu punya gambar, pakai tag img di HTML, hapus CSS placeholder ini */
+img {
+  max-width: 100%; /* Agar gambar responsif tidak melebihi layar */
+}
