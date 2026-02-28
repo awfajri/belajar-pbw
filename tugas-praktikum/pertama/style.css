@@ -1,0 +1,101 @@
+/* Reset margin dan padding default bawaan browser */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Menggunakan font sans-serif agar terlihat modern dan bersih */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+/* Membungkus konten agar posisinya di tengah layar dengan lebar maksimal */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Styling Bagian Header (Judul Artikel) */
+.article-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.category {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.8em;
+  color: #0d1136; /* Warna biru dongker pekat sesuai gambar */
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.meta {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Styling Bagian Daftar Isi */
+.toc {
+  margin-bottom: 40px;
+}
+
+.toc h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.toc ol {
+  padding-left: 20px; /* Memberi jarak ke dalam untuk penomoran list */
+}
+
+.toc li {
+  margin-bottom: 5px;
+  color: #3b82f6;
+}
+
+.toc a {
+  color: #3b82f6; /* Warna link biru terang */
+  text-decoration: none; /* Menghilangkan garis bawah bawaan link */
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+/* Styling Konten Paragraf dan Sub-judul */
+article h2 {
+  font-size: 1.8em;
+  color: #222;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+article p {
+  font-size: 1.05em;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Meniru gaya Drop-cap (Huruf besar di awal teks) */
+.drop-cap {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #0d1136;
+}
+
+.citation {
+  font-size: 0.85em;
+  color: #888;
+}
