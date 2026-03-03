@@ -1,23 +1,38 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Meta dasar untuk encoding dan tampilan responsif -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Praktikum Kedua</title>
+    <!-- Menghubungkan file CSS lokal -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Memuat font Plus Jakarta Sans dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Judul utama halaman form pendaftaran -->
     <h1 class="title">Pendaftaran Mahasiswa Baru</h1>
+    <!-- Form input data mahasiswa baru -->
     <form action="" method="get">
+      <!-- Input NPM mahasiswa -->
       <label for="npm">NPM (Nomor Pokok Mahasiswa)</label>
       <input type="text" name="npm" id="npm" />
       <br />
+      <!-- Input nama lengkap mahasiswa -->
       <label for="nama">Nama Lengkap</label>
       <input type="text" name="nama" id="nama" />
       <br />
+      <!-- Input alamat tempat tinggal -->
       <label for="alamat">Alamat</label>
       <textarea name="alamat" id="alamat" rows="4"></textarea>
       <br />
+      <!-- Pilihan jenis kelamin dengan radio button -->
       <label for="kelamin">Jenis Kelamin</label>
       <div class="radio-group">
         <input type="radio" name="kelamin" id="laki" value="laki-laki" />
@@ -32,12 +47,14 @@
         <label for="perempuan">Perempuan</label>
       </div>
       <br />
+      <!-- Pilihan program studi -->
       <label for="prodi">Program Studi</label>
       <select name="Teknik Informatika" id="jurusan">
         <option value="informatika">Teknik Informatika</option>
         <option value="sistem informasi">Sistem Informasi</option>
       </select>
       <br />
+      <!-- Tombol untuk mengirim data form -->
       <button type="submit">Tambah</button>
     </form>
   </body>

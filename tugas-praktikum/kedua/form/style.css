@@ -1,32 +1,38 @@
+/* Reset dasar dan pengaturan box model global */
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Memberi jarak isi halaman dari tepi layar */
 body {
   padding: 20px;
 }
 
+/* Styling judul utama form */
 .title {
   text-align: center;
-  color: #36314a;
+  color: #1b1092;
   margin-bottom: 30px;
   font-size: 28px;
 }
 
+/* Mengatur lebar form dan posisi di tengah */
 form {
   max-width: 800px;
   margin: 0 auto;
 }
 
+/* Styling label untuk setiap field input */
 label {
   margin-bottom: 8px;
   display: block;
-  color: #5a4a3a;
+  color: #413a5a;
 }
 
+/* Styling umum untuk input, textarea, dan select */
 #npm,
 #nama,
 #alamat,
@@ -39,25 +45,30 @@ label {
   margin-bottom: 15px;
 }
 
+/* Mengizinkan textarea diubah ukurannya secara vertikal */
 #alamat {
   resize: vertical;
 }
 
+/* Container untuk grup pilihan radio */
 .radio-group {
   margin-bottom: 15px;
 }
 
+/* Mengatur jarak radio button */
 .radio-group input[type="radio"] {
   margin-right: 5px;
   margin-left: 0;
 }
 
+/* Label radio ditampilkan sejajar */
 .radio-group label {
   display: inline;
   margin-right: 20px;
   margin-bottom: 0;
 }
 
+/* Styling tombol submit utama */
 button[type="submit"] {
   background-color: #2563eb;
   color: white;
@@ -69,6 +80,8 @@ button[type="submit"] {
   text-transform: capitalize;
 }
 
+/* Efek hover tombol submit */
 button[type="submit"]:hover {
-  background-color: #1d4ed8;
+  background-color: #00154e;
+  color: #fff;
 }
