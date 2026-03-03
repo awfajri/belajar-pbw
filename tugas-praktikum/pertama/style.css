@@ -1,26 +1,27 @@
 /* Reset margin dan padding default bawaan browser */
+/* Mengatur box-sizing agar padding dan border termasuk dalam ukuran total */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Styling elemen body dengan font dan warna dasar */
 body {
-  /* Menggunakan font sans-serif agar terlihat modern dan bersih */
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   color: #333;
   line-height: 1.6;
   background-color: #fff;
 }
 
-/* Membungkus konten agar posisinya di tengah layar dengan lebar maksimal */
+/* Container untuk membungkus konten di tengah layar dengan lebar maksimal */
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
-/* Styling Bagian Header (Judul Artikel) */
+/* Styling bagian header dengan judul, kategori, dan metadata artikel */
 .article-header {
   text-align: center;
   margin-bottom: 40px;
@@ -34,7 +35,7 @@ body {
 
 h1 {
   font-size: 2.8em;
-  color: #0d1136; /* Warna biru dongker pekat sesuai gambar */
+  color: #0d1136;
   line-height: 1.2;
   margin-bottom: 15px;
 }
@@ -44,7 +45,7 @@ h1 {
   color: #555;
 }
 
-/* Styling Bagian Daftar Isi */
+/* Styling bagian daftar isi dengan link navigasi ke setiap bagian */
 .toc {
   margin-bottom: 40px;
 }
@@ -56,7 +57,7 @@ h1 {
 }
 
 .toc ol {
-  padding-left: 20px; /* Memberi jarak ke dalam untuk penomoran list */
+  padding-left: 20px;
 }
 
 .toc li {
@@ -65,15 +66,15 @@ h1 {
 }
 
 .toc a {
-  color: #3b82f6; /* Warna link biru terang */
-  text-decoration: none; /* Menghilangkan garis bawah bawaan link */
+  color: #3b82f6;
+  text-decoration: none;
 }
 
 .toc a:hover {
   text-decoration: underline;
 }
 
-/* Styling Konten Paragraf dan Sub-judul */
+/* Styling heading artikel h2 dengan ukuran dan margin yang tepat */
 article h2 {
   font-size: 1.8em;
   color: #222;
@@ -88,8 +89,7 @@ article p {
   margin-bottom: 20px;
 }
 
-/* Meniru gaya Drop-cap (Huruf besar di awal teks) */
-.drop-cap {
+.teks-bold {
   font-size: 1.8em;
   font-weight: bold;
   color: #0d1136;
