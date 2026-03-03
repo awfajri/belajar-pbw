@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum Kedua</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">Pendaftaran Mahasiswa Baru</h1>
+    <form action="" method="get">
+      <label for="npm">NPM (Nomor Pokok Mahasiswa)</label>
+      <input type="text" name="npm" id="npm" />
+      <br />
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" name="nama" id="nama" />
+      <br />
+      <label for="alamat">Alamat</label>
+      <textarea name="alamat" id="alamat" rows="4"></textarea>
+      <br />
+      <label for="kelamin">Jenis Kelamin</label>
+      <div class="radio-group">
+        <input type="radio" name="kelamin" id="laki" value="laki-laki" />
+        <label for="laki">Laki-Laki</label>
+        <input
+          type="radio"
+          name="kelamin"
+          id="perempuan"
+          value="perempuan"
+          checked
+        />
+        <label for="perempuan">Perempuan</label>
+      </div>
+      <br />
+      <label for="prodi">Program Studi</label>
+      <select name="Teknik Informatika" id="jurusan">
+        <option value="informatika">Teknik Informatika</option>
+        <option value="sistem informasi">Sistem Informasi</option>
+      </select>
+      <br />
+      <button type="submit">Tambah</button>
+    </form>
+  </body>
+</html>

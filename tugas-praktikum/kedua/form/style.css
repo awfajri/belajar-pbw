@@ -1,0 +1,74 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  color: #36314a;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+label {
+  margin-bottom: 8px;
+  display: block;
+  color: #5a4a3a;
+}
+
+#npm,
+#nama,
+#alamat,
+#jurusan {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+#alamat {
+  resize: vertical;
+}
+
+.radio-group {
+  margin-bottom: 15px;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px;
+  margin-left: 0;
+}
+
+.radio-group label {
+  display: inline;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+button[type="submit"] {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+button[type="submit"]:hover {
+  background-color: #1d4ed8;
+}
