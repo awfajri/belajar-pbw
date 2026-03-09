@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function cetakFibonacci(n) {
+        let deret = [0, 1];
+
+        if (n <= 0) return [];
+        if (n === 1) return [0];
+
+        // Mulai loop dari 2 karena dua suku pertama sudah ada
+        for (let i = 2; i < n; i++) {
+          // Angka selanjutnya = jumlah dua angka sebelumnya
+          deret[i] = deret[i - 1] + deret[i - 2];
+        }
+
+        return deret;
+      }
+
+      // Contoh pemanggilan: Mencetak 10 suku pertama
+      console.log(cetakFibonacci(10));
+      // Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+    </script>
+  </body>
+</html>
