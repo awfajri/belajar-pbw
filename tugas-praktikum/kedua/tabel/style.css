@@ -1,0 +1,71 @@
+/* Reset dasar dan pengaturan box model global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Memberi ruang pada halaman dan warna teks utama */
+body {
+  padding: 16px;
+  color: #334155;
+}
+
+/* Container utama agar konten berada di tengah */
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+/* Styling judul halaman tabel */
+h1 {
+  text-align: center;
+  margin-bottom: 14px;
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* Styling tabel utama */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+/* Styling umum untuk sel header dan data */
+th,
+td {
+  border: 1px solid #d9dee6;
+  padding: 8px 6px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Header tabel dengan warna latar yang lebih tegas */
+thead th {
+  background-color: #f3f5f8;
+  color: #1f2937;
+  font-weight: 700;
+}
+
+/* Lebar kolom NPM agar angka rapi (hanya kolom utama) */
+thead tr:first-child th:first-child,
+tbody td:first-child {
+  width: 92px;
+  white-space: nowrap;
+}
+
+/* Kolom nama dibuat rata kiri dan lebih lebar (hanya kolom utama) */
+thead tr:first-child th:nth-child(2),
+tbody td:nth-child(2) {
+  text-align: left;
+  width: 200px;
+  white-space: nowrap;
+}
+
+/* Memberi efek zebra agar baris mudah dibaca */
+tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
