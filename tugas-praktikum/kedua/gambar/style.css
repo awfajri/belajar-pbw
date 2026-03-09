@@ -1,0 +1,53 @@
+/* Reset dasar dan pengaturan box model global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling elemen body dengan font dan warna dasar */
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* Container utama untuk membungkus konten */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styling judul halaman gallery */
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #222222;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Grid layout untuk gallery 3 kolom */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Styling individual item dalam gallery */
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Styling gambar dalam gallery agar responsive */
+.gallery-item img {
+  width: 100%;
+  height: 256px;
+  object-fit: cover;
+  display: block;
+}
