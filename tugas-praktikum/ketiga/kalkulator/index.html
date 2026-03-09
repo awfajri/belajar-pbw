@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <title>Kalkulator Modern JS</title>
+  </head>
+  <body>
+    <h1>Kalkulator Arrow Function</h1>
+    <p>Buka <b>Console (F12)</b> untuk melihat hasil perhitungan.</p>
+
+    <script>
+      // Menggunakan Arrow Function dan Spread Operator (...)
+      // 'angka' akan menjadi sebuah array berisi semua input
+      const tambah = (...angka) => angka.reduce((acc, curr) => acc + curr);
+      const kurang = (...angka) => angka.reduce((acc, curr) => acc - curr);
+      const kali = (...angka) => angka.reduce((acc, curr) => acc * curr);
+      const bagi = (...angka) => angka.reduce((acc, curr) => acc / curr);
+      const mod = (a, b) => a % b;
+
+      // Perhitungan
+      console.log("Hasil Tambah (10+5+2):", tambah(10, 5, 2));
+      console.log("Hasil Kurang (20-5-3):", kurang(20, 5, 3));
+      console.log("Hasil Kali (2*3*4):", kali(2, 3, 4));
+      console.log("Hasil Bagi (100/2/5):", bagi(100, 2, 5));
+      console.log("Hasil Modulo (10 % 3):", mod(10, 3));
+    </script>
+  </body>
+</html>
