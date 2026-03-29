@@ -1,0 +1,147 @@
+/* Reset kecil ini bikin layout lebih mudah ditebak: margin/padding nol dan ukuran elemen dihitung pakai border-box. */
+* {
+  font-style: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar saya bikin clean warna putih, lalu dibuat sticky supaya menu tetap kebaca walau user scroll ke bawah. */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 8px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+/* Area brand dipertegas lewat ukuran font, bobot tebal, dan alignment icon + teks biar terlihat satu kesatuan. */
+.navbar-brand {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1f2937;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Menu navbar tetap pakai keluarga font yang sama supaya visual antar bagian tidak terasa campur-campur. */
+.nav-item {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Saat hover, warna brand sengaja tidak diubah supaya identitas brand-nya stabil. */
+.navbar-brand:hover {
+  color: #1f2937;
+}
+
+/* Icon apple dikasih aksen biru agar ada titik fokus kecil di sisi kiri navbar. */
+.brand-icon {
+  color: #0d6efd;
+  font-size: 18px;
+}
+
+/* Warna link default dibuat lebih kalem, sedangkan ukuran dan weight dijaga tetap ringan dibaca. */
+.navbar .nav-link {
+  color: #8b9099;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* State aktif dan hover dibuat biru supaya user langsung tahu menu mana yang sedang dipilih. */
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: #0d6efd;
+}
+
+/* Konten utama dibatasi lebar maksimumnya biar tetap nyaman dibaca di layar lebar. */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Gallery dikasih ruang napas dari navbar supaya transisi antar section terasa lebih enak. */
+.container.text-center {
+  padding-top: 32px;
+}
+
+/* Semua card disamakan tinggi dan font-nya supaya tampilan grid terlihat rapi dan seimbang. */
+.card {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  height: 100%;
+}
+
+/* Isi card disusun kolom (vertical) agar judul, deskripsi, dan tombol punya alur baca yang jelas. */
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Deskripsi card dibuat fleksibel (flex-grow) supaya tombol bisa turun ke bawah dan posisi antar card tetap sejajar. */
+.card-text {
+  font-size: 14px;
+  color: #4b5563;
+  flex-grow: 1;
+}
+
+/* Wrapper form ini mengatur nuansa panel: ada jarak, padding, dan sudut rounded biar terasa ramah. */
+.Form {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  max-width: 100%;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 48px;
+  border-radius: 8px;
+}
+
+/* Judul form dibuat menonjol dengan ukuran besar dan warna biru supaya section contact cepat dikenali. */
+.Form h1 {
+  text-align: left;
+  font-size: 32px;
+  color: blue;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+/* Paragraf pembuka dibuat lebih kecil dan soft sebagai teks pendukung, bukan fokus utama. */
+.Form p {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 18px;
+}
+
+/* Label field dibuat cukup tegas agar user gampang membedakan tiap input. */
+.Form .form-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+/* Border input dipilih tipis dan netral supaya form terlihat bersih, tidak terlalu ramai. */
+.Form .form-control {
+  border: 1px solid #d7dee7;
+}
+
+/* Placeholder sengaja dibuat lebih pudar agar isi yang diketik user jadi elemen paling menonjol. */
+.Form .form-control::placeholder {
+  color: #9aa3af;
+}
+
+/* Sedikit margin atas di checkbox membantu ritme antar field terasa lebih lega. */
+.Form .form-check {
+  margin-top: 4px;
+}
+
+/* Label checkbox disamakan warnanya dengan teks form lain supaya konsisten. */
+.Form .form-check-label {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+/* Tombol submit dijaga tetap simpel: padding pas, ukuran font kecil, tapi masih nyaman diklik. */
+.Form .btn-primary {
+  padding: 6px 16px;
+  font-size: 14px;
+}
