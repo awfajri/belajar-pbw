@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family:
+    "Plus Jakarta Sans",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+.bg-soft {
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #0d51fd1f, transparent 100%);
+}
+
+.hero-card {
+  position: relative;
+}
+
+.hero-card::after {
+  content: "";
+  position: absolute;
+  inset: auto -40px -40px auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+
+.text-primary-emphasis {
+  color: #0bd7d7 !important;
+}
