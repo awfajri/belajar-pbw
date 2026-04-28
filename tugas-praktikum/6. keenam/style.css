@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+.container {
+  margin: 16px 32px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.inputForm {
+  width: 48%;
+}
+
+.information {
+  width: 36%;
+}
+
+.content {
+  width: 100%;
+  padding: 16px 16px 24px 16px;
+  border:
+    solid 2px,
+    #003737;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.inputForm .content input,
+select,
+.information .content input {
+  font-family: "Poppins", Helvetica, sans-serif;
+  padding: 4px;
+  width: 98%;
+  height: 1.4rem;
+  border: solid 1px grey;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.inputForm .content select {
+  height: 2rem;
+  width: 100%;
+}
+
+.inputForm .content label,
+.information .content label {
+  font-weight: 700;
+  color: #003737;
+}
+
+.inputForm .content button {
+  font-family: "Poppins", Helvetica, sans-serif;
+  padding: 4px 24px;
+  border: solid 1px #111;
+  border-radius: 4px;
+  background-color: #003737;
+  color: white;
+}
+
+footer {
+  margin: 6rem 0 0 8rem;
+  padding: 16px;
+  width: 50%;
+  text-align: center;
+  background-color: #003737;
+  color: white;
+  border-radius: 4px;
+}
