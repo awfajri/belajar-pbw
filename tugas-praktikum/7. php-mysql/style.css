@@ -1,11 +1,3 @@
-/* style.css
-   Human note: Centralized styles for this small project.
-   - Uses Sora as the primary UI font
-   - Sets the primary color to maroon (#6E1A37)
-   - Provides a simple, clean table layout without heavy cards
-*/
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sora:wght@100..800&display=swap");
-
 :root {
   --primary: #6e1a37;
   --muted: #6c757d;
@@ -32,7 +24,6 @@ body {
   background: #fff;
 }
 
-/* Primary color overrides for Bootstrap utilities used in this project */
 .bg-primary {
   background-color: var(--primary) !important;
   color: #fff !important;
@@ -42,7 +33,6 @@ body {
   border-color: var(--primary) !important;
 }
 
-/* Small, natural-looking header area used on index pages */
 .page-header {
   display: flex;
   align-items: center;
@@ -56,19 +46,16 @@ body {
   font-weight: 600;
 }
 
-/* Make mahasiswa names stand out in the primary color */
 .nama-mahasiswa {
   color: var(--primary);
   font-weight: 600;
 }
 
-/* Reduce heavy card visuals where we still use them */
 .card {
   box-shadow: none;
   border: 1px solid #e9ecef;
 }
 
-/* Table tuning for a clean, modern look similar to the provided screenshot */
 .table thead th {
   background: #f8f9fa;
   border-bottom: 2px solid rgba(0, 0, 0, 0.05);
@@ -78,12 +65,10 @@ body {
   vertical-align: middle;
 }
 
-/* Utility: subtle back button spacing */
 .btn-back {
   margin-right: 0.5rem;
 }
 
-/* Small responsive tweak */
 @media (max-width: 576px) {
   .page-header {
     flex-direction: column;

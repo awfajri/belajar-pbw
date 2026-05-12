@@ -26,7 +26,7 @@ CREATE TABLE krs (
     FOREIGN KEY (matakuliah_kodemk) REFERENCES matakuliah(kodemk) ON DELETE CASCADE
 );
 
--- Data mahasiswa (10 data sesuai gambar)
+-- Data mahasiswa
 INSERT INTO mahasiswa (npm, nama, jurusan, alamat) VALUES
 ('1234567890123', 'Siska Putri', 'Teknik Informatika', 'Jl. Merdeka No.1'),
 ('1234567890124', 'Ujang Aziz', 'Sistem Operasi', 'Jl. Diponegoro No.2'),

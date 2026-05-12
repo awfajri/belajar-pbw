@@ -1,5 +1,4 @@
 <?php
-// Form edit mahasiswa, tombol back ke homepage di kiri atas
 include '../koneksi.php';
 if (!isset($_GET['npm'])) header("Location: index.php");
 $npm = $_GET['npm'];

@@ -1,5 +1,4 @@
 <?php
-// Form tambah mahasiswa, dengan tombol back ke homepage di kiri atas
 include '../koneksi.php';
 $error = isset($_GET['error']) ? $_GET['error'] : '';
 ?>
